@@ -36402,7 +36402,7 @@ $packages["math/rand"] = (function() {
 	$pkg.$init = $init;
 	return $pkg;
 })();
-$packages["bitbucket.org/ei1chi/hook-and-shoot"] = (function() {
+$packages["github.com/ei1chi/hook-and-shoot"] = (function() {
 	var $pkg = {}, $init, fmt, ebiten, ebitenutil, image, color, log, math, rand, time, Player, Bullet, Hook, Target, imgInfo, ptrType, ptrType$1, sliceType, ptrType$2, sliceType$1, ptrType$3, sliceType$2, ptrType$4, sliceType$3, ptrType$5, sliceType$4, sliceType$5, sliceType$6, player, bullets, hooks, targets, triggerd, playerImage, playerImage$24ptr, bulletImage, bulletImage$24ptr, hookImage, hookImage$24ptr, gaugeImage, gaugeImage$24ptr, gFrameImage, gFrameImage$24ptr, targetImages, draw, initGame, updateGame, update, main;
 	fmt = $packages["fmt"];
 	ebiten = $packages["github.com/hajimehoshi/ebiten"];
@@ -36413,7 +36413,7 @@ $packages["bitbucket.org/ei1chi/hook-and-shoot"] = (function() {
 	math = $packages["math"];
 	rand = $packages["math/rand"];
 	time = $packages["time"];
-	Player = $pkg.Player = $newType(0, $kindStruct, "main.Player", true, "bitbucket.org/ei1chi/hook-and-shoot", true, function(x_, y_, angle_, charge_, chargeSpd_, recast_) {
+	Player = $pkg.Player = $newType(0, $kindStruct, "main.Player", true, "github.com/ei1chi/hook-and-shoot", true, function(x_, y_, angle_, charge_, chargeSpd_, recast_) {
 		this.$val = this;
 		if (arguments.length === 0) {
 			this.x = 0;
@@ -36431,7 +36431,7 @@ $packages["bitbucket.org/ei1chi/hook-and-shoot"] = (function() {
 		this.chargeSpd = chargeSpd_;
 		this.recast = recast_;
 	});
-	Bullet = $pkg.Bullet = $newType(0, $kindStruct, "main.Bullet", true, "bitbucket.org/ei1chi/hook-and-shoot", true, function(x_, y_, speed_, angle_) {
+	Bullet = $pkg.Bullet = $newType(0, $kindStruct, "main.Bullet", true, "github.com/ei1chi/hook-and-shoot", true, function(x_, y_, speed_, angle_) {
 		this.$val = this;
 		if (arguments.length === 0) {
 			this.x = 0;
@@ -36445,7 +36445,7 @@ $packages["bitbucket.org/ei1chi/hook-and-shoot"] = (function() {
 		this.speed = speed_;
 		this.angle = angle_;
 	});
-	Hook = $pkg.Hook = $newType(0, $kindStruct, "main.Hook", true, "bitbucket.org/ei1chi/hook-and-shoot", true, function(x_, y_) {
+	Hook = $pkg.Hook = $newType(0, $kindStruct, "main.Hook", true, "github.com/ei1chi/hook-and-shoot", true, function(x_, y_) {
 		this.$val = this;
 		if (arguments.length === 0) {
 			this.x = 0;
@@ -36455,7 +36455,7 @@ $packages["bitbucket.org/ei1chi/hook-and-shoot"] = (function() {
 		this.x = x_;
 		this.y = y_;
 	});
-	Target = $pkg.Target = $newType(0, $kindStruct, "main.Target", true, "bitbucket.org/ei1chi/hook-and-shoot", true, function(x_, y_) {
+	Target = $pkg.Target = $newType(0, $kindStruct, "main.Target", true, "github.com/ei1chi/hook-and-shoot", true, function(x_, y_) {
 		this.$val = this;
 		if (arguments.length === 0) {
 			this.x = 0;
@@ -36465,7 +36465,7 @@ $packages["bitbucket.org/ei1chi/hook-and-shoot"] = (function() {
 		this.x = x_;
 		this.y = y_;
 	});
-	imgInfo = $pkg.imgInfo = $newType(0, $kindStruct, "main.imgInfo", true, "bitbucket.org/ei1chi/hook-and-shoot", false, function(img_, halfx_, halfy_) {
+	imgInfo = $pkg.imgInfo = $newType(0, $kindStruct, "main.imgInfo", true, "github.com/ei1chi/hook-and-shoot", false, function(img_, halfx_, halfy_) {
 		this.$val = this;
 		if (arguments.length === 0) {
 			this.img = ptrType$4.nil;
@@ -36693,11 +36693,11 @@ $packages["bitbucket.org/ei1chi/hook-and-shoot"] = (function() {
 		$s = -1; return;
 		/* */ } return; } if ($f === undefined) { $f = { $blk: main }; } $f._entry = _entry; $f._i = _i; $f._keys = _keys; $f._q = _q; $f._q$1 = _q$1; $f._r = _r; $f._r$1 = _r$1; $f._r$2 = _r$2; $f._ref = _ref; $f._tmp = _tmp; $f._tmp$1 = _tmp$1; $f._tuple = _tuple; $f._tuple$1 = _tuple$1; $f.err = err; $f.err$1 = err$1; $f.f = f; $f.i = i; $f.imgFiles = imgFiles; $f.imgPath = imgPath; $f.sx = sx; $f.sy = sy; $f.$s = $s; $f.$r = $r; return $f;
 	};
-	Player.init("bitbucket.org/ei1chi/hook-and-shoot", [{prop: "x", name: "x", anonymous: false, exported: false, typ: $Float64, tag: ""}, {prop: "y", name: "y", anonymous: false, exported: false, typ: $Float64, tag: ""}, {prop: "angle", name: "angle", anonymous: false, exported: false, typ: $Float64, tag: ""}, {prop: "charge", name: "charge", anonymous: false, exported: false, typ: $Float64, tag: ""}, {prop: "chargeSpd", name: "chargeSpd", anonymous: false, exported: false, typ: $Float64, tag: ""}, {prop: "recast", name: "recast", anonymous: false, exported: false, typ: $Int, tag: ""}]);
-	Bullet.init("bitbucket.org/ei1chi/hook-and-shoot", [{prop: "x", name: "x", anonymous: false, exported: false, typ: $Float64, tag: ""}, {prop: "y", name: "y", anonymous: false, exported: false, typ: $Float64, tag: ""}, {prop: "speed", name: "speed", anonymous: false, exported: false, typ: $Float64, tag: ""}, {prop: "angle", name: "angle", anonymous: false, exported: false, typ: $Float64, tag: ""}]);
-	Hook.init("bitbucket.org/ei1chi/hook-and-shoot", [{prop: "x", name: "x", anonymous: false, exported: false, typ: $Float64, tag: ""}, {prop: "y", name: "y", anonymous: false, exported: false, typ: $Float64, tag: ""}]);
-	Target.init("bitbucket.org/ei1chi/hook-and-shoot", [{prop: "x", name: "x", anonymous: false, exported: false, typ: $Float64, tag: ""}, {prop: "y", name: "y", anonymous: false, exported: false, typ: $Float64, tag: ""}]);
-	imgInfo.init("bitbucket.org/ei1chi/hook-and-shoot", [{prop: "img", name: "img", anonymous: false, exported: false, typ: ptrType$4, tag: ""}, {prop: "halfx", name: "halfx", anonymous: false, exported: false, typ: $Float64, tag: ""}, {prop: "halfy", name: "halfy", anonymous: false, exported: false, typ: $Float64, tag: ""}]);
+	Player.init("github.com/ei1chi/hook-and-shoot", [{prop: "x", name: "x", anonymous: false, exported: false, typ: $Float64, tag: ""}, {prop: "y", name: "y", anonymous: false, exported: false, typ: $Float64, tag: ""}, {prop: "angle", name: "angle", anonymous: false, exported: false, typ: $Float64, tag: ""}, {prop: "charge", name: "charge", anonymous: false, exported: false, typ: $Float64, tag: ""}, {prop: "chargeSpd", name: "chargeSpd", anonymous: false, exported: false, typ: $Float64, tag: ""}, {prop: "recast", name: "recast", anonymous: false, exported: false, typ: $Int, tag: ""}]);
+	Bullet.init("github.com/ei1chi/hook-and-shoot", [{prop: "x", name: "x", anonymous: false, exported: false, typ: $Float64, tag: ""}, {prop: "y", name: "y", anonymous: false, exported: false, typ: $Float64, tag: ""}, {prop: "speed", name: "speed", anonymous: false, exported: false, typ: $Float64, tag: ""}, {prop: "angle", name: "angle", anonymous: false, exported: false, typ: $Float64, tag: ""}]);
+	Hook.init("github.com/ei1chi/hook-and-shoot", [{prop: "x", name: "x", anonymous: false, exported: false, typ: $Float64, tag: ""}, {prop: "y", name: "y", anonymous: false, exported: false, typ: $Float64, tag: ""}]);
+	Target.init("github.com/ei1chi/hook-and-shoot", [{prop: "x", name: "x", anonymous: false, exported: false, typ: $Float64, tag: ""}, {prop: "y", name: "y", anonymous: false, exported: false, typ: $Float64, tag: ""}]);
+	imgInfo.init("github.com/ei1chi/hook-and-shoot", [{prop: "img", name: "img", anonymous: false, exported: false, typ: ptrType$4, tag: ""}, {prop: "halfx", name: "halfx", anonymous: false, exported: false, typ: $Float64, tag: ""}, {prop: "halfy", name: "halfy", anonymous: false, exported: false, typ: $Float64, tag: ""}]);
 	$init = function() {
 		$pkg.$init = function() {};
 		/* */ var $f, $c = false, $s = 0, $r; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
@@ -36733,7 +36733,7 @@ $packages["bitbucket.org/ei1chi/hook-and-shoot"] = (function() {
 	return $pkg;
 })();
 $synthesizeMethods();
-var $mainPkg = $packages["bitbucket.org/ei1chi/hook-and-shoot"];
+var $mainPkg = $packages["github.com/ei1chi/hook-and-shoot"];
 $packages["runtime"].$init();
 $go($mainPkg.$init, []);
 $flushConsole();
