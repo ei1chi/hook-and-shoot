@@ -36643,7 +36643,7 @@ $packages["github.com/ei1chi/hook-and-shoot"] = (function() {
 		var _entry, _i, _keys, _q, _q$1, _r, _r$1, _r$2, _ref, _tmp, _tmp$1, _tuple, _tuple$1, err, err$1, f, i, imgFiles, imgPath, sx, sy, $s, $r;
 		/* */ $s = 0; var $f, $c = false; if (this !== undefined && this.$blk !== undefined) { $f = this; $c = true; _entry = $f._entry; _i = $f._i; _keys = $f._keys; _q = $f._q; _q$1 = $f._q$1; _r = $f._r; _r$1 = $f._r$1; _r$2 = $f._r$2; _ref = $f._ref; _tmp = $f._tmp; _tmp$1 = $f._tmp$1; _tuple = $f._tuple; _tuple$1 = $f._tuple$1; err = $f.err; err$1 = $f.err$1; f = $f.f; i = $f.i; imgFiles = $f.imgFiles; imgPath = $f.imgPath; sx = $f.sx; sy = $f.sy; $s = $f.$s; $r = $f.$r; } s: while (true) { switch ($s) { case 0:
 		targetImages = $makeSlice(sliceType$3, 1);
-		imgPath = "docs/_resources/";
+		imgPath = "resources/";
 		err = $ifaceNil;
 		imgFiles = $makeMap($String.keyFor, [{ k: "player.png", v: playerImage }, { k: "bullet.png", v: bulletImage }, { k: "hook.png", v: hookImage }, { k: "gauge.png", v: gaugeImage }, { k: "gauge_frame.png", v: gFrameImage }, { k: "target_green.png", v: (0 >= targetImages.$length ? ($throwRuntimeError("index out of range"), undefined) : targetImages.$array[targetImages.$offset + 0]) }]);
 		_ref = imgFiles;

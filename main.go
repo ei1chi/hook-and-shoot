@@ -40,7 +40,7 @@ func main() {
 
 	targetImages = make([]imgInfo, 1)
 
-	imgPath := "docs/_resources/"
+	imgPath := "resources/"
 	var err error
 
 	imgFiles := map[string]*imgInfo{
