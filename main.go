@@ -67,7 +67,7 @@ func main() {
 
 	initGame()
 
-	if err := don.Run(update, screenWidth, screenHeight, 2, "hook-and-shoot game"); err != nil {
+	if err := don.Run(update, screenWidth, screenHeight, 1, "hook-and-shoot game"); err != nil {
 		log.Fatal(err)
 	}
 }

@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"math"
 	"math/rand"
 	"time"
@@ -99,4 +100,24 @@ func updateGame() {
 		})
 	}
 	triggerd = triggers
+
+	// 当たり判定処理
+	// 力技O(n**2)
+	for i, b := range bullets {
+		hit, idx := false, 0
+
+		for j, t := range targets {
+			distsq := math.Pow(b.x-t.x, 2) + math.Pow(b.y-t.y, 2)
+			if distsq < math.Pow(40, 2) {
+				hit, idx = true, j
+				fmt.Println("hit!")
+				break
+			}
+		}
+
+		if hit {
+			bullets = append(bullets[:i], bullets[i+1:]...)
+			targets = append(targets[:idx], targets[idx+1:]...)
+		}
+	}
 }
